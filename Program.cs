@@ -14,3 +14,32 @@ for (int i = 0; i < count; i++)
 }
 Console.WriteLine($"Loop Completed");
 // Ask User how many times they wish to print hello world and print accordingly.
+
+// While Loop
+
+int counter = 0;
+
+while (counter < 10)
+{
+    Console.WriteLine($"Hello, World! - {counter}");
+    counter+=2;
+}
+
+// Ask the user for a number and find the total number that is entered. Print 
+// final sum when the user enters -1 to exit.
+
+int sum = 0;
+int num = 0;
+
+while(num != -1)
+{
+    Console.WriteLine("Please enter number to be summed. (-1 to stop or exit)");
+    num = Convert.ToInt32(Console.ReadLine());
+    if(num != -1)
+    {
+        sum += num;
+    }
+}
+Console.WriteLine($"Your sum is: {sum}");
+
+Console.WriteLine("********************** While Loop Completed *************************");
