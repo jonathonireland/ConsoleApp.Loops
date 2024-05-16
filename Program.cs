@@ -43,3 +43,18 @@ while(num != -1)
 Console.WriteLine($"Your sum is: {sum}");
 
 Console.WriteLine("********************** While Loop Completed *************************");
+int sum1 = 0;
+int num1 = 0;
+Console.WriteLine("********************** Do While Loop Completed *************************");
+do
+{
+    Console.WriteLine("Please enter number to be summed. (-1 to stop or exit)");
+    num1 = Convert.ToInt32(Console.ReadLine());
+    if (num1 != -1)
+    {
+        sum1 += num1;
+    }
+} while (num1 != -1);
+Console.WriteLine($"Your sum is: {sum1}");
+
+Console.WriteLine("********************** Do While Loop Completed *************************");
